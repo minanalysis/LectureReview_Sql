@@ -9,3 +9,4 @@ SELECT TO_NUMBER('ABC') FROM dual;--오류
 --숫자 to 문자 
 SELECT TO_CHAR(123456.78) FROM dual;
 SELECT TO_CHAR(123456.78, '999,999.99') FROM dual; -- 문자형태 지정해주기 
+
