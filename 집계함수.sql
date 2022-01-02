@@ -2,6 +2,7 @@
 --집계함수 
 
 SELECT COUNT(*) FROM employees;
+--모든 행 갯수 출력
 
 SELECT COUNT(*) total_cnt, MIN(salary) min_salary, MAX(salary) max_salary 
 FROM employees;
