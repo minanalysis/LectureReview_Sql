@@ -20,16 +20,6 @@ FROM dual;
 SELECT first_name || ' ' || last_name as full_name 
 FROM employees;
 
---결측값 찾아보기 
-SELECT * FROM employees
-WHERE commission_pct = NULL;--오류
- 
-SELECT * FROM employees 
-WHERE commission_pct IS NULL; -- 이즈널만 가능
-
-SELECT * FROM employees
-WHERE commission_pct IS NOT NULL;
-
 --LIKE 연산자
 SELECT * FROM employees
 WHERE phone_number LIKE '%9';
