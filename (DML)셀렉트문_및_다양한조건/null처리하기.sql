@@ -1,3 +1,12 @@
+--결측값 찾아보기 
+SELECT * FROM employees
+WHERE commission_pct = NULL;--오류
+ 
+SELECT * FROM employees 
+WHERE commission_pct IS NULL; -- 이즈널만 가능
+
+SELECT * FROM employees
+WHERE commission_pct IS NOT NULL;
 
 --NULL 처리하기 
 SELECT NVL(NULL,'A') ,NVL(NULL, 1), NVL(2, 3) FROM dual;
