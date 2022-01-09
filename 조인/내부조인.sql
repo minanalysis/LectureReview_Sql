@@ -22,3 +22,9 @@ WHERE a.job_id = b.job_id --셀렉트문에는 없지만, employees테이블과 
 AND a.department_id = c.department_id 
 ORDER BY 1;
 --오더바이절은 셀렉트문에 있는 컬럼순번
+
+SELECT a.employee_id, a.first_name || ' ' || a.last_name emp_names, b.job_title, c.department_name, d.street_address, d.city, e.country_name 
+FROM employees a, jobs b, departments c, locations d, countries e 
+WHERE a.job_id=b.job_id AND a.department_id=c.department_id AND c.location_id = d.location_id  AND d.country_id = e.country_id 
+ORDER BY 1; 
+
