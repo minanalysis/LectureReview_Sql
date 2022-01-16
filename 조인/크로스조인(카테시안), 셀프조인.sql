@@ -18,8 +18,8 @@ FROM employees a, employees b
 WHERE a.manager_id = b.employee_id
 ORDER BY 1;
 --오라클 문법 기준으로 쿼리 작성함. 
---employees 테이블에는 사원아이디와 매니저아이디가 같이 존재하기 때문에 
 --동일 테이블이지만 다른 테이블처럼 쿼리문을 작성
+--employees 테이블에는 사원아이디와 매니저아이디가 같이 존재하기 때문에, 해당 사원의 매니저명을 불러오기 위함.
 
 SELECT a.employee_id,a.first_name || ' ' || a.last_name emp_name,a.manager_id,b.first_name || ' ' || b.last_name manager_name
 FROM employees a
