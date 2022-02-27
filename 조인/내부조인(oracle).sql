@@ -1,5 +1,5 @@
 --<내부조인> 
---WHERE 절! 을 사용하는 내부조인. 오라클에서만 사용한다. 
+--WHERE 절!을 사용하는 내부조인. 오라클에서만 사용한다. 
 
 SELECT a.employee_id,
              a.first_name,
