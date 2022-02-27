@@ -3,7 +3,7 @@ SELECT a.region_name, b.department_id, b.department_name
 FROM regions a,departments b
 WHERE 1=1;
 --조인 조건이 없거나, 조건이 에러일 때 해당 테이블에 대한 모든 데이터가 결합되어 출력되는 것.
---여기서, regions 테이블의 경우 4행, departments 테이블의경우 27행이였는데 총 108행이 출력되는 것을 확인함. 
+--여기서, regions 테이블의 경우 4행, departments 테이블의경우 27행이었는데, 총 108행이 출력되는 것을 확인함. 
 
 --<CROSS JOIN>
 SELECT a.region_name, b.department_id, b.department_name
