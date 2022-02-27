@@ -35,5 +35,5 @@ UNION ALL
 SELECT job_id FROM employees 
 WHERE 1=1 AND salary BETWEEN 5001 AND 6000 
 ORDER BY job_id;
---교집합이 하나로 출력되는 것이 아니라, 모두 출력됨.
+--교집합이 하나로 출력되는 것이 아니라, 모두 출력됨!
 
